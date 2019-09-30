@@ -1,1 +1,1 @@
-export PATH=$RL_ROOT/$PATH
+export PATH=$RL_ROOT:$PATH
