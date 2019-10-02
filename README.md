@@ -4,7 +4,7 @@ Linux based tool to set up an environment for working on a pandoc document in on
 
 # Installation
 
-Install with `make install_local` to copy to `$HOME/.local/bin` (or run with `rl`: `https://gitlab.com/samflam/rl.git` from this directory)
+Install with `make install_local` to copy to `$HOME/.local/bin`
 
 # Usage
 
