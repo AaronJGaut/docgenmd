@@ -1,5 +1,5 @@
 LOCAL_INSTALL_PATH = $(HOME)/.local/bin
-BIN_NAME = drgen
+BIN_NAME = docmd
 
 default:
 	@echo "No default target. Use make install_local to install to $(LOCAL_INSTALL_PATH)"
