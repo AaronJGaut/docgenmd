@@ -4,7 +4,7 @@ Linux based tool to set up an environment for working on a pandoc document in on
 
 # Installation
 
-Install with `make install_local` to copy to `$HOME/.local/bin`
+Install with `make install` to copy to `/usr/local/bin` or `PREFIX=FOO make install` to copy to `FOO/bin`
 
 # Usage
 

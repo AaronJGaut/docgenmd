@@ -1,18 +1,17 @@
-LOCAL_INSTALL_PATH = $(HOME)/.local/bin
+PREFIX ?= /usr/local
+
 BIN_NAME = docgenmd
 
-default:
-	@echo "No default target. Use make install_local to install to $(LOCAL_INSTALL_PATH)"
-	@exit 2
-.PHONY: default
+all:
+.PHONY: all
 
-install_local: $(LOCAL_INSTALL_PATH)/$(BIN_NAME)
-.PHONY: install_local
+install: $(PREFIX)/bin/$(BIN_NAME)
+.PHONY: install
 
-$(LOCAL_INSTALL_PATH)/$(BIN_NAME) : $(BIN_NAME) | $(LOCAL_INSTALL_PATH)
-	cp $< $@
+$(PREFIX)/bin/$(BIN_NAME) : $(BIN_NAME) | $(PREFIX)/bin
+	install -T $< $@
 
-$(LOCAL_INSTALL_PATH):
+$(PREFIX)/bin:
 	mkdir -p $@
 
 $(BIN_NAME):
